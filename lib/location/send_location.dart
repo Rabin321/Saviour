@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saviour/location/geolocator.dart';
 
 class SendLocation extends StatelessWidget {
   const SendLocation({super.key});
@@ -68,7 +69,14 @@ class SendLocation extends StatelessWidget {
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
                               const Color.fromARGB(255, 28, 168, 33))),
-                      onPressed: () {},
+                      onPressed: () {
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => const GeoLocatorSend()
+
+                        //         ));
+                      },
                       child: const Text(
                         "Send Location",
                         style: TextStyle(fontSize: 15),
