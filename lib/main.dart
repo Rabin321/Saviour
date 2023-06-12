@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saviour/screens/home.dart';
 
 import 'package:saviour/screens/onboarding.dart';
 
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Saviour',
       // home: BottomNavBar(),
 
-      home: OnboardingScreen(),
+      // home: OnboardingScreen(),// suru dekhi ho yo
+      home: Home(),
     );
   }
 }

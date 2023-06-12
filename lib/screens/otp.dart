@@ -172,13 +172,14 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
                     // textAlign: TextAlign.center,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
 
                 FadeInDown(
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
                     child: Text(
                       "Enter code sent to + ${phoneNumberController.text}",
                       style: TextStyle(
@@ -222,7 +223,7 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
                             selectedFillColor: Colors.white,
                             inactiveColor: Colors.black,
                             inactiveFillColor:
-                                Color.fromARGB(255, 241, 238, 238),
+                                const Color.fromARGB(255, 241, 238, 238),
                             activeFillColor:
                                 hasError ? Colors.green : Colors.white,
                           ),
@@ -271,7 +272,7 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
                           TextSpan(
                             text: " RESEND",
                             recognizer: onTapRecognizer,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Colors.deepOrange,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w500,
@@ -297,7 +298,10 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
                           tween: Tween(begin: 30.0, end: 0.0),
                           duration: const Duration(seconds: 30),
                           builder: (context, value, child) => Text(
-                            "${value} seconds",
+                            "$value seconds",
+
+                            // "${value} seconds", changed to "$value seconds"
+
                             style: const TextStyle(
                                 color: Colors.red, fontSize: 16),
                           ),
